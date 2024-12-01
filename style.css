@@ -1,29 +1,59 @@
-/* Простые стили для адаптивности */
 body {
-    font-family: Arial, sans-serif;
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #fff;
+  color: #333;
 }
-.header-text {
-    text-align: center;
-    margin: 20px 0;
+
+nav ul {
+  display: flex;
+  justify-content: center;
+  list-style: none;
+  background-color: #003366;
+  padding: 10px 0;
 }
-.carousel-inner img {
-    width: 100%;
-    height: auto;
+
+nav ul li {
+  margin: 0 20px;
 }
+
+nav ul li a {
+  color: white;
+  text-decoration: none;
+}
+
+header {
+  background-color: #003366;
+  color: white;
+  padding: 50px;
+  text-align: center;
+}
+
+section {
+  padding: 20px;
+  margin: 10px;
+}
+
+.carousel img {
+  width: 100%;
+  max-width: 300px;
+  margin: 5px;
+}
+
 footer {
-    text-align: center;
-    margin-top: 30px;
-    padding: 10px;
-    background-color: #f8f9fa;
+  text-align: center;
+  background-color: #003366;
+  color: white;
+  padding: 10px;
 }
-.contact-btn {
-    padding: 10px 20px;
-    background-color: #007bff;
-    color: white;
-    text-decoration: none;
-    border-radius: 5px;
-    margin: 5px;
-}
-.container {
-    padding: 20px;
+
+@media (max-width: 768px) {
+  nav ul {
+    flex-direction: column;
+  }
+
+  .carousel img {
+    max-width: 100%;
+  }
 }
