@@ -38,7 +38,7 @@
 </head>
 <body>
 
-    <!-- ����� � ���������� -->
+    <!-- Шапка с навигацией -->
     <header>
         <nav class="navbar navbar-expand-lg navbar-light bg-light">
             <a class="navbar-brand" href="#home">RECIPROCA</a>
@@ -46,7 +46,7 @@
                 <ul class="navbar-nav">
                     <li class="nav-item"><a class="nav-link" href="#home">Home</a></li>
                     <li class="nav-item"><a class="nav-link" href="#chi-siamo">Chi Siamo</a></li>
-                    <li class="nav-item"><a class="nav-link" href="#attivita">La Nostra Attivita</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#attivita">La Nostra Attività</a></li>
                     <li class="nav-item"><a class="nav-link" href="#gallery">Galleria</a></li>
                     <li class="nav-item"><a class="nav-link" href="#media">NOI SUI MEDIA</a></li>
                     <li class="nav-item"><a class="nav-link" href="#contatti">Contatti</a></li>
@@ -54,18 +54,73 @@
             </div>
         </nav>
         <div class="header-text">
-            <p>Benvenuti nel mondo di RECIPROCA, dove il coraggio e la generosita si fondono per creare un futuro migliore per tutti.</p>
-            <p>Scopri le nostre incredibili attivita passate e presenti, unite dalla passione per aiutare chi ha bisogno.</p>
+            <p>Benvenuti nel mondo di RECIPROCA, dove il coraggio e la generosità si fondono per creare un futuro migliore per tutti.</p>
+            <p>Scopri le nostre incredibili attività passate e presenti, unite dalla passione per aiutare chi ha bisogno.</p>
         </div>
     </header>
 
-    <!-- ������� �������� -->
+    <!-- Главная страница -->
     <section id="home" class="container">
         <h2>Benvenuti nel nostro mondo</h2>
-        <p>Scopri di piu su di noi e sulle nostre attivita.</p>
+        <p>Scopri di più su di noi e sulle nostre attività.</p>
     </section>
 
-    <!-- ������ "Chi Siamo" -->
+    <!-- Раздел "Chi Siamo" -->
     <section id="chi-siamo" class="container">
         <h2>Chi Siamo</h2>
-        <p>Siamo un gruppo di volontari uniti
+        <p>Siamo un gruppo di volontari uniti dal valore della solidarietà reciproca...</p>
+        <img src="image1.jpg" alt="Chi Siamo" class="img-fluid">
+    </section>
+
+    <!-- Галерея с каруселью -->
+    <section id="gallery" class="container">
+        <h2>Galleria</h2>
+        <p>Scorri attraverso le immagini che raccontano storie di speranza, amore e solidarietà.</p>
+        <div id="carouselExample" class="carousel slide" data-bs-ride="carousel">
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <img src="image1.jpg" class="d-block w-100" alt="...">
+                </div>
+                <div class="carousel-item">
+                    <img src="image2.jpg" class="d-block w-100" alt="...">
+                </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExample" data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+            </button>
+        </div>
+    </section>
+
+    <!-- Раздел "NOI SUI MEDIA" -->
+    <section id="media" class="container">
+        <h2>NOI SUI MEDIA</h2>
+        <p><a href="https://youtube.com/watch?v=78vBMt76u2Q" target="_blank">Guarda il nostro video su YouTube</a></p>
+        <p><a href="https://www.centropagina.it/pesaro/attualita-tir-solidarieta-ucraina-volontari-associazione-reciproca/" target="_blank">Articolo su di noi</a></p>
+    </section>
+
+    <!-- Раздел "Contatti" -->
+    <section id="contatti" class="container">
+        <h2>Contatti</h2>
+        <p>Contattaci:</p>
+        <a href="mailto:reciproca71@gmail.com" target="_blank" class="contact-btn">Email</a>
+        <a href="https://www.facebook.com/profile.php?id=100090214914487" target="_blank" class="contact-btn">Facebook</a>
+        <p>Telefono: +39 351 6683202</p>
+        <p>WhatsApp: +39 351 6683202</p>
+        <p>Indirizzo: via Sirolo, 5 - 61122 Pesaro PU</p>
+        <p>c.f.: 02157310414</p>
+    </section>
+
+    <!-- Футер -->
+    <footer>
+        <p>© 2024 RECIPROCA O.d.v. - Tutti i Diritti Riservati</p>
+    </footer>
+
+    <!-- Подключение Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
